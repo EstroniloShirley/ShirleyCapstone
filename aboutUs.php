@@ -74,7 +74,7 @@
             >
               <li>
                 <a
-                  href="#"
+                  href="index.php"
                   class="block py-2 px-3 text-white bg-lime-800 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                   >Home</a
@@ -82,35 +82,35 @@
               </li>
               <li>
                 <a
-                  href="services.html"
+                  href="services.php"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Services</a
                 >
               </li>
               <li>
                 <a
-                  href="events.html"
+                  href="events.php"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Events</a
                 >
               </li>
               <li>
                 <a
-                  href="contactUs.html"
+                  href="contactUs.php"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Contact Us</a
                 >
               </li>
               <li>
                 <a
-                  href="aboutUs.html"
+                  href="aboutUs.php"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
-                  href="logIn.html"
+                  href="logIn.php"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Log in</a
                 >
@@ -121,316 +121,7 @@
       </nav>
     </section>
     <!-- Navbar Ends Here -->
-
-    <!-- Hero Section Start -->
-    <section>
-      <div class="hero-section">
-        <h1
-          style="height: 80vh"
-          class="text-4xl font-bold text-center flex justify-center items-center"
-        >
-          Barangay Health Center
-        </h1>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Infographics steps start -->
-    <section class="info-steps">
-      <div class="infographic">
-        <div class="step">
-          <div class="step-icon">1</div>
-          <h3>Choose the Day</h3>
-          <p>Select the preferred day for your checkup.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">2</div>
-          <h3>Select Age Group</h3>
-          <p>Specify the age group for accurate service.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">3</div>
-          <h3>Provide Your Name</h3>
-          <p>Enter your name for appointment confirmation.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">4</div>
-          <h3>Submit Booking</h3>
-          <p>Submit your booking request online.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">5</div>
-          <h3>Confirmation</h3>
-          <p>Receive a confirmation for your appointment.</p>
-        </div>
-      </div>
-    </section>
-    <!-- Infographics steps end -->
-
-    <!-- Start of services cards -->
-    <section
-      style="height: 100vh; width: 100%"
-      class="max-w-7xl m-auto flex justify-center items-center"
-    >
-      <div class="flex flex-wrap">
-        <div
-          class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 content-center text-center4"
-        >
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m4.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Monday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Adults (18 and above)
-            </h1>
-
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full text-sm capitalize text-white font-semibold hidden group-hover:block bg-lime-700"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m1.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Tuesday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Children (Below 17)
-            </h1>
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full   bg-gray-900 text-sm capitalize text-white font-semibold hidden group-hover:block"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m1.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Wednesday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Maternal checkup
-            </h1>
-
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full   bg-gray-900 text-sm capitalize text-white font-semibold hidden group-hover:block"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m1.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Thursday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Senior Citizen
-            </h1>
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full   bg-gray-900 text-sm capitalize text-white font-semibold hidden group-hover:block"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m1.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Friday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Persons with special needs (PWD)
-            </h1>
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full   bg-gray-900 text-sm capitalize text-white font-semibold hidden group-hover:block"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark-bg-gray-800 dark:border-gray-700"
-            to="/search"
-            className=" group relative flex flex-col justify-center items-center text-center  "
-          >
-            <img
-              className=" w-48 rounded-lg h-44"
-              src="/img/m1.jpeg"
-              alt="ApartmentPhoto"
-            />
-            <h5
-              class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Saturday:
-            </h5>
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark-text-white"
-            >
-              Free dental checkup and cleaning
-            </h1>
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black-70"
-            >
-              <div
-                className=" absolute inset-0 flex flex-col item-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all"
-              >
-                <button
-                  className="px-3.5 py-2 rounded-full   bg-gray-900 text-sm capitalize text-white font-semibold hidden group-hover:block"
-                >
-                  Book an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of sercies cards -->
-
-    <!-- Guidlines Sction start -->
-    <section class="max-w-7xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
-        <img
-          class="h-96 w-2/4"
-          src="/img/m2.jpeg"
-          alt=""
-        />
-        <div class="flex justify-center w-2/4">
-          <p class="">
-            Family planning at the barangay health center plays a crucial role
-            in promoting the well-being of the community by offering essential
-            services to individuals and couples. These services include
-            counseling on contraceptive methods, maternal health education, and
-            access to a range of family planning options. By empowering families
-            with information and support, the barangay health center contributes
-            to the overall health and stability of the community, fostering a
-            foundation for informed decision-making and healthier lives.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="max-w-7xl m-auto mt-20">
-      <div class="flex items-center space-x-12">
-        <div class="flex justify-center w-2/4">
-          <p class="">
-            Ensuring the health and safety of the barangay is paramount for
-            community well-being. Implementing regular health awareness
-            campaigns, promoting proper waste disposal practices, and organizing
-            safety drills contribute to a safer environment. Collaborative
-            efforts in maintaining clean surroundings and disseminating crucial
-            health information foster a resilient and health-conscious barangay
-            community.
-          </p>
-        </div>
-        <!-- <div class="bg-black h-96 w-2/4"></div> -->
-        <img
-          class="h-96 w-2/4"
-          src="/img/m2.jpeg"
-          alt=""
-        />
-      </div>
-    </section>
-    <!-- Guidlines Section end -->
+<section><div><h1>About Us</h1></div></section>
 
     <!-- Footer Starts -->
     <section class="footer">

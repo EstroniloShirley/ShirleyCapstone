@@ -55,7 +55,7 @@
           >
             <li>
               <a
-                href="#"
+                href="index.php"
                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
                 >Home</a
@@ -260,6 +260,8 @@
         </aside>
       </div>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-white dark:bg-gray-900 mt-20">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
