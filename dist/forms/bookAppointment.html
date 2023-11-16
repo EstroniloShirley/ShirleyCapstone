@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./booking.css"
+    />
+    <title>Set Appointment Form</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Barangay Health Center</h1>
+      <h2>Appointment Form</h2>
+    </div>
+    <form
+      action="#"
+      method="post"
+    >
+      <div class="elem-group inlined">
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          id="name"
+          name="patient_name"
+          placeholder="Type your first name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="middlename">Middle Name</label>
+        <input
+          type="text"
+          id="name"
+          name="patient_name"
+          placeholder="Type your middle name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          id="name"
+          name="patient_name"
+          placeholder="Type your last name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="suffixname">Suffix</label>
+        <input
+          type="text"
+          id="name"
+          name="patient_name"
+          placeholder="Type your suffix name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+
+      <div class="elem-group">
+        <label for="address">Home Address</label>
+        <input
+          type="text"
+          id="address"
+          name="patient_address"
+          placeholder="Type your complete address"
+          pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+          required
+        />
+      </div>
+      <hr />
+      <div class="elem-group inlined">
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="patient_phone"
+          placeholder="Type your phone number"
+          pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+          required
+        />
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="service-selection">Select Health Service</label>
+        <select
+          id="service-selection"
+          name="service_preference"
+          required
+        >
+          <option value="">Choose a Service</option>
+          <option value="Schedule para sa mga bata">
+            Monday: Para sa mga bata
+          </option>
+          <option value="Schedule para sa mga buntis">
+            Tuesday: Para sa mga buntis
+          </option>
+          <option value="Schedule para sa mga Adults">
+            Wednesday: Para sa mga Adults
+          </option>
+          <option value="Schedule para sa mga Senior Citezen">
+            Thursday: Para sa mga Senior Citezen
+          </option>
+          <option value="Schedule para sa mga PWD">
+            Friday: Para sa mga PWD
+          </option>
+        </select>
+      </div>
+      <div class="elem-group inlined">
+        <label for="queing">Choose Queing Number</label>
+        <input
+          type="number"
+          id="queue"
+          name="queue_number"
+          placeholder="select a number"
+          min="1"
+          required
+        />
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="date">Choose Available Date</label>
+        <input
+          type="date"
+          id="date"
+          name="other_date"
+          required
+        />
+      </div>
+      <hr />
+      <div class="elem-group">
+        <label for="message">Appointment Concern</label>
+        <textarea
+          id="message"
+          name="patient_message"
+          placeholder="Tell us about your concern."
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Book This Schedule</button>
+      <button
+        style="background-color: red"
+        type="submit"
+      >
+        Go Back
+      </button>
+    </form>
+  </body>
+</html>
