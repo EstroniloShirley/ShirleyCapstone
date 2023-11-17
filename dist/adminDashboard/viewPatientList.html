@@ -13,11 +13,11 @@
       rel="stylesheet"
       href="style.css"
     /> -->
-    <title>Patients List</title>
+    <title>Admin Dashboard Panel</title>
   </head>
   <body>
     <nav
-      class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+      class="fixed top-0 z-50 w-full bg-green-200 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700"
     >
       <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
@@ -49,7 +49,7 @@
               class="flex ms-2 md:me-24"
             >
               <img
-                src="/img/health logo.png"
+                src="/dist/img/health logo.png"
                 class="h-10 me-3"
                 alt="Health Center Logo"
               />
@@ -71,12 +71,12 @@
       class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
       aria-label="Sidebar"
     >
-      <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
-        <ul class="space-y-2 font-medium">
+      <div class="h-full px-3  pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+        <ul class="space-y-2 font-medium ">
           <li>
             <a
               href="dashboard.html"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700 group"
             >
               <svg
                 class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -92,13 +92,14 @@
                   d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
                 />
               </svg>
-              <span class="ms-3">Dashboard</span>
+              <span class="ms-3 ">Dashboard</span>
             </a>
           </li>
+          <hr />
           <li>
             <a
               href="viewScheduledToday.html"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700 group"
             >
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -111,13 +112,13 @@
                   d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Scheduled Today</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Patient Appointment</span>
             </a>
           </li>
           <li>
             <a
               href="viewPatientList.html"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="flex bg-green-100 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 hover:bg-gray-100 dark:hover:bg-gray-700 group"
             >
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -136,7 +137,7 @@
           <li>
             <a
               href="viewUsers.html"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700 group"
             >
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -155,7 +156,7 @@
           <li>
             <a
               href="currentUser.html"
-              class="mt-60 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="mt-60 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700 group"
             >
               <img
                 class="w-8 h-8 rounded-full"
@@ -168,7 +169,7 @@
           <li>
             <a
               href="signOut.html"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700 group"
             >
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -194,288 +195,297 @@
 
     <div class="p-4 sm:ml-64">
       <div
-        class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14"
+        class="p-4 border-2  border-gray-200 border-none rounded-lg dark:border-gray-700 mt-14"
       >
-        <div class="grid grid-cols-3 gap-4 mb-4">
-          <div
-            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <div class="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+      <div>
+          <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
+              <span class="sr-only">Action button</span>
+              All
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg>
-            </p>
+          </button>
+          <!-- Dropdown menu -->
+          <div id="dropdownAction" class="z-10  bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownActionButton">
+                  <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Monday</a>
+                  </li>
+                  <li>
+                      <a href="#" class="bg-green-100 block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Tuesday</a>
+                  </li>
+                  <li>
+                      <a href="#" class=" block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Wednesday</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Thursday</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Friday</a>
+                  </li>
+              </ul>
+              <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-green-700 hover:bg-green-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Show All</a>
+              </div>
           </div>
-          <div
-            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
+      </div>
+      <label for="table-search" class="sr-only">Search</label>
+      <div class="relative">
+          <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
               </svg>
-            </p>
           </div>
-          <div
-            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
+          <input type="text" id="table-search-users" class="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for users">
+      </div>
+  </div>
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="p-4">
+                  <div class="flex items-center">
+                      <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                      <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                  </div>
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  ID
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                 Previous Check-up
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Status
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Action
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+              <td class="w-4 p-4">
+                  <div class="flex items-center">
+                      <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                      <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                  </div>
+              </td>
+              <td class="px-6 py-4">
+                <div class="flex items-center">
+                    <div class=""></div> 01
+                </div>
+            </td>
+              <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+                  <div class="">
+                      <div class="text-base font-semibold">Neil Sims</div>
+                      <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+                  </div>  
+              </th>
+              <td class="px-6 py-4">
+                  Pre-natal Check-up
+              </td>
+              <td class="px-6 py-4">
+                  <div class="flex items-center">
+                      <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Serving
+                  </div>
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+            <td class="w-4 p-4">
+                <div class="flex items-center">
+                    <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                </div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex items-center">
+                  <div class=""></div> 02
+              </div>
+          </td>
+            <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+                <div class="">
+                    <div class="text-base font-semibold">Neil Sims</div>
+                    <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+                </div>  
+            </th>
+            <td class="px-6 py-4">
+                React Developer
+            </td>
+            <td class="px-6 py-4">
+                <div class="flex items-center">
+                    <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
+                </div>
+            </td>
+            <td class="px-6 py-4">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+          <td class="w-4 p-4">
+              <div class="flex items-center">
+                  <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+              </div>
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+                <div class=""></div> 02
+            </div>
+        </td>
+          <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+              <div class="">
+                  <div class="text-base font-semibold">Neil Sims</div>
+                  <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+              </div>  
+          </th>
+          <td class="px-6 py-4">
+              React Developer
+          </td>
+          <td class="px-6 py-4">
+              <div class="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
+              </div>
+          </td>
+          <td class="px-6 py-4">
+              <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+          </td>
+      </tr>
+      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+        <td class="w-4 p-4">
+            <div class="flex items-center">
+                <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+            </div>
+        </td>
+        <td class="px-6 py-4">
+          <div class="flex items-center">
+              <div class=""></div> 02
           </div>
+      </td>
+        <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+            <div class="">
+                <div class="text-base font-semibold">Neil Sims</div>
+                <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+            </div>  
+        </th>
+        <td class="px-6 py-4">
+            React Developer
+        </td>
+        <td class="px-6 py-4">
+            <div class="flex items-center">
+                <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
+            </div>
+        </td>
+        <td class="px-6 py-4">
+            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+        </td>
+    </tr>
+    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+      <td class="w-4 p-4">
+          <div class="flex items-center">
+              <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+          </div>
+      </td>
+      <td class="px-6 py-4">
+        <div class="flex items-center">
+            <div class=""></div> 02
         </div>
-        <div
-          class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800"
-        >
-          <p class="text-2xl text-gray-400 dark:text-gray-500">
-            <svg
-              class="w-3.5 h-3.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 18"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 1v16M1 9h16"
-              />
-            </svg>
-          </p>
+    </td>
+      <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+          <div class="">
+              <div class="text-base font-semibold">Neil Sims</div>
+              <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+          </div>  
+      </th>
+      <td class="px-6 py-4">
+          React Developer
+      </td>
+      <td class="px-6 py-4">
+          <div class="flex items-center">
+              <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
+          </div>
+      </td>
+      <td class="px-6 py-4">
+          <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+      </td>
+  </tr>
+  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+    <td class="w-4 p-4">
+        <div class="flex items-center">
+            <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
         </div>
-        <div class="grid grid-cols-2 gap-4 mb-4">
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
+    </td>
+    <td class="px-6 py-4">
+      <div class="flex items-center">
+          <div class=""></div> 02
+      </div>
+  </td>
+    <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+        <div class="">
+            <div class="text-base font-semibold">Neil Sims</div>
+            <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+        </div>  
+    </th>
+    <td class="px-6 py-4">
+        React Developer
+    </td>
+    <td class="px-6 py-4">
+        <div class="flex items-center">
+            <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
         </div>
-        <div
-          class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800"
-        >
-          <p class="text-2xl text-gray-400 dark:text-gray-500">
-            <svg
-              class="w-3.5 h-3.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 18"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 1v16M1 9h16"
-              />
-            </svg>
-          </p>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-          <div
-            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
-          >
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg
-                class="w-3.5 h-3.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </p>
-          </div>
-        </div>
+    </td>
+    <td class="px-6 py-4">
+        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-gray-600">
+  <td class="w-4 p-4">
+      <div class="flex items-center">
+          <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+      </div>
+  </td>
+  <td class="px-6 py-4">
+    <div class="flex items-center">
+        <div class=""></div> 02
+    </div>
+</td>
+  <th scope="row" class="flex items-center  text-gray-900 whitespace-nowrap dark:text-white">
+      <div class="">
+          <div class="text-base font-semibold">Neil Sims</div>
+          <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+      </div>  
+  </th>
+  <td class="px-6 py-4">
+      React Developer
+  </td>
+  <td class="px-6 py-4">
+      <div class="flex items-center">
+          <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Pending
+      </div>
+  </td>
+  <td class="px-6 py-4">
+      <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+  </td>
+</tr>
+
+      </tbody>
+  </table>
+</div>
+
       </div>
     </div>
   </body>
 </html>
+

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cc433e9725.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -14,289 +22,510 @@
       rel="stylesheet"
       href="../src/input.css"
     />
+
     <title>Document</title>
   </head>
   <body>
-    <nav class="border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Flowbite</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+    <section>
+      <nav class="border-green-200 bg-green-200 font-bold dark:bg-gray-900">
         <div
-          class="hidden w-full md:block md:w-auto"
-          id="navbar-default"
+          class="border-green-200 font-bold max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          <a
+            href="./index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <li>
-              <a
-                href="index.html"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="events.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Events</a
-              >
-            </li>
-            <li>
-              <a
-                href="contactUs.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="aboutUs.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="logIn.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Log in</a
-              >
-            </li>
-          </ul>
+            <img
+              src="/dist/img/health logo.png"
+              class="h-8"
+              alt="Health Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >BHCAS</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border hover:text-blue-500 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="border-green-200 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="border-green-200 text-blue-500 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="border-green-200 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blogs.html"
+                  class="border-green-200 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contactUs.html"
+                  class="font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="aboutUs.html"
+                  class="border-green-200 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="logIn.html"
+                  class="border-green-200 font-bold block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Log in</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
 
-    <section
-      class="text-white"
-      class="event-hero"
-      style="
-        background-image: url(/img/Barangay\ health\ center\ sample.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
-    >
+    <section class="bg-black servicesheroIMG text-white">
       <div class="max-w-7xl m-auto">
         <h1
           style="height: 50vh"
-          class="text-4xl font-bold text-center flex items-center ml-5"
-        ></h1>
+          class="lg:text-4xl text-2xl font-bold text-center flex items-center ml-5"
+        >
+          Services
+        </h1>
       </div>
     </section>
-    <div
-      class="bg--color1 text-center text-white p-10"
-      style="margin-bottom: 8rem"
-    >
-      <h2
-        class="text-4xl p-10"
-        style="padding: 1.8rem"
-      >
-        What Services We Offer
-      </h2>
+    <div class="bg--color1 text-center text-white p-3 lg:p-5">
+      <h2 class="text-xl lg:text-3xl font-semibold">What Services We Offer</h2>
     </div>
-    <section class="max-w-6xl m-auto mt-20">
-      <div class="flex items-center space-x-12">
-        <div class="h-96 w-2/4">
-          <img
-            src="/img/Services3Pambata.jpg"
-            alt="ServiceForChildren"
-          />
-        </div>
+
+    <section class="max-w-6xl m-auto mt-16">
+      <div
+        class="flex items-center lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100"
+      >
+        <img
+          class="lg:h-96 h-64 w-2/4"
+          src="/dist/img/Services3Pambata.jpg"
+          alt=""
+        />
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Check-Up para sa lahat ng mga Bata
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang Check-up para sa lahat ng mga bata ay isasagawa tuwing
             Miyerkules linggo-linggo upang maiwasang makahalubilo ng mga bata
             ang mga pasyenteng may malalalang sakit.
           </p>
+
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Lunes</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="max-w-6xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
+      <div
+        class="flex items-center mt-16 lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100"
+      >
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Check-Up para sa mga Buntis
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang check-up ng mga buntis ay isinasagawa upang masiguro na maayos
             at malusog ang mag-ina. Kailangang magpunta sa naka iskedyul na
             petsa ng check-up ng isang buntis sa ating barangay upang maiwasan
             ang pagkakaroon ng kuymplikasyon habang nagbubuntis hanggang sa
             panganganak.
           </p>
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Martes</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="h-96 w-2/4">
-          <img
-            src="/img/Services-buntis.png"
-            alt="ServiceForPregnantWoman"
-          />
-        </div>
+        <img
+          class="w-2/4 lg:h-96 h-64"
+          src="../img/serviceBTS.jpg"
+          alt=""
+        />
       </div>
-    </section>
-    <section class="max-w-6xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
-        <div class="h-96 w-2/4">
-          <img
-            src="/img/Services5Adults.jpg"
-            alt="ServiceForAdults"
-          />
-        </div>
+      <div
+        class="flex items-center lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100 mt-16"
+      >
+        <img
+          class="w-2/4 lg:h-96 h-64"
+          src="/dist/img/Services5Adults.jpg"
+          alt=""
+        />
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Check-Up para sa lahat ng mga Adults
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang Check-up para sa lahat ng mga Adults ay isasagawa tuwing
             Miyerkules linggo-linggo upang masiguro ang mabuting kalusugan ng
             ating mga mamamayan.
           </p>
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Miyerkules</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="max-w-6xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
+      <div
+        class="flex items-center lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100 mt-16"
+      >
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Check-Up para sa lahat ng mga Senior-Citezen
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang check-up para sa mga matatanda ay isinasagawa tuwing Huwebes
             bawat linggo upang mabigyan ng mas maayos at mabigyan ng kaukulang
             atensyong medikal check-up ang ating mga Senior-Citezen.
           </p>
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Huwebes</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="h-96 w-2/4">
-          <img
-            src="/img//Services4Matanda.jpg"
-            alt="ServiceForSenior-Citezen"
-          />
-        </div>
+        <img
+          class="w-2/4 lg:h-96 h-64"
+          src="../img/servicesSNR.jpg"
+          alt=""
+        />
       </div>
-    </section>
-    <section class="max-w-6xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
-        <div class="h-96 w-2/4">
-          <img
-            src="/img/Services6PWD.png"
-            alt="ServiceForPWD"
-          />
-        </div>
+      <div
+        class="flex items-center lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100 mt-16"
+      >
+        <img
+          class="w-2/4 lg:h-96 h-64"
+          src="/dist/img/Services6PWD.png"
+          alt=""
+        />
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Check-Up para sa lahat ng mga PWD
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang check-up para sa mga matatanda ay isinasagawa tuwing Biyernes
             bawat linggo upang mabigyan ng kaukulang atensyong medikal check-up
             ang ating mga PWD.
           </p>
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Biyernes</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="max-w-6xl m-auto mt-10">
-      <div class="flex items-center space-x-12">
+      <div
+        class="flex items-center lg:space-x-12 space-x-5 mx-2 p-5 lg:mx-0 lg:border border-green-400 rounded-lg bg-green-100 mt-16"
+      >
         <div class="flex flex-col justify-center w-2/4">
           <div
-            class="text-center bg--color2 text-xl font-medium"
-            style="padding: 1rem; margin-bottom: 4rem"
+            class="text-center bg--color2 lg:text-lg text-sm font-medium p-2 lg:p-4 lg:mb-5 mb-4"
           >
             Free Weekly Dental Check-Up
           </div>
-          <p class="">
+          <p class="lg:text-base text-xs">
             Ang araw ng sabado ay inilaan ng ating barangay para sa ating
             libreng dental check-up upang mapangalagaan at magkaroon tayo ng
             maayos na oral hygeine para sa ating kalusugan.
           </p>
+          <div class="mt-2 lg:mt-0">
+            <div class="flex justify-between">
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-regular fa-calendar-days"></i>&nbsp;
+                <span class="font-medium">Sabado</span>
+              </div>
+              <div class="lg:text-lg text-sm font-mediun lg:mt-3">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;
+                <span class="font-medium">Barangay Clinic</span>
+              </div>
+            </div>
+            <div class="lg:text-lg text-sm font-mediun mt-2 lg:mt-3">
+              <i class="fa-regular fa-clock font-semibold"></i>&nbsp;
+              <span class="font-medium">8:00 AM - 12:00NN</span>
+            </div>
+          </div>
+          <div class="lg:mt-10 mt-5">
+            <a
+              href="#"
+              class="flex w-full justify-center items-center px-3 py-2 lg:text-lg text-sm font-medium text-center text-white bg-green-900 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+            >
+              Book a consultation
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="h-96 w-2/4">
-          <img
-            src="/img//Services7Dental.png"
-            alt="ServiceForDental"
-          />
-        </div>
+        <img
+          class="w-2/4 lg:h-96 h-64"
+          src="/dist/img/Services7Dental.png"
+          alt=""
+        />
       </div>
     </section>
-    <footer class="bg--color2 dark:bg-gray-900 mt-20">
+    <footer class="bg-green-200 dark:bg-gray-900 mt-10">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a
-              href="https://flowbite.com/"
-              class="flex items-center"
+              href="./index.html"
+              class="items-center flex"
             >
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                class="h-8 me-3"
-                alt="FlowBite Logo"
+                src="/dist/img/health logo.png"
+                class="me-3 h-20"
+                alt="Health Logo"
               />
               <span
                 class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >Flowbite</span
+                >BHCAS</span
               >
             </a>
           </div>
@@ -482,5 +711,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
   </body>
 </html>
