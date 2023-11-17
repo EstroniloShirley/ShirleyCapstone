@@ -13,77 +13,111 @@
     <title>Document</title>
   </head>
   <body>
-    <aside
-      class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left"
-      id="show-side-navigation1"
-      style="background-color: rgba(60, 212, 179, 0.801); padding-bottom: 50px"
+    <div
+      style="
+       
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      "
     >
-      <i
-        class="uil-bars close-aside d-md-none d-lg-none"
-        data-close="show-side-navigation1"
-      ></i>
-      <div
-        class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4"
-      >
-        <img
-          class="rounded-pill img-fluid"
-          width="65"
-          src=""
-          alt=""
-        />
-        <div class="ms-2">
-          <h1
-            style="
-              margin-top: 10px;
-              margin-bottom: 20px;
-              text-align: center;
-              font-size: xx-large;
-            "
-          >
-            Welcome
-          </h1>
-        </div>
-      </div>
-
-      <ul
-        class="categories list-unstyled"
+    <body>
+      <h1>This for the Admin Dashboard</h1>
+      <button>
+        <a href="/dist/forms/bookAppointment.html">Book an Appointment</a>
+      </button>
+  
+      <aside
+        class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left"
+        id="show-side-navigation1"
         style="
-          margin-top: 20px;
-          font-size: large;
-          margin-left: 20px;
-          list-style: none;
+        display: grid;
+          background-color: rgba(60, 212, 179, 0.801);
+          padding-bottom: 50px;
         "
       >
-        <li class="">
-          <a href="dashboard.html">Dashboard</a>
-        </li>
-        <li class="">
-          <a href="./viewAppointments.html">Schecduled Today</a>
-        </li>
-        <li class="">
-          <a href="./viewPatientList.html">Patient Records</a>
-        </li>
-        <li class="">
-          <a href="./viewUsers.html">Users</a>
-        </li>
+        <i
+          class="uil-bars close-aside d-md-none d-lg-none"
+          data-close="show-side-navigation1"
+        ></i>
         <div
-          style="
-            margin-top: 200px;
+          class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4"
+        >
+          <img
+            class="rounded-pill img-fluid"
+            width="65"
+            src=""
+            alt=""
+          />
+          <div class="ms-2">
+            <h1
+              style="
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: xx-large;
+              "
+            >
+              Welcome
+            </h1>
+          </div>
+        </div>
 
+        <ul
+          class="categories list-unstyled"
+          style="
+            margin-top: 20px;
             font-size: large;
             margin-left: 20px;
+            list-style: none;
           "
         >
-          <h3 style="margin-bottom: 5px">Angel M. Aguas</h3>
+          <li class="">
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="">
+            <a href="./viewAppointments.html">Scheduled Today</a>
+          </li>
+          <li class="">
+            <a href="./viewPatientList.html">Patient Records</a>
+          </li>
+          <li class="">
+            <a href="./viewUsers.html">Users</a>
+          </li>
+          <div
+            style="
+              margin-top: 200px;
 
-          <a
-            id="sign-out"
-            href="#"
-            style="text-decoration: none; margin-left: 20px; margin-bottom: 20%"
-            >Sign Out</a
+              font-size: large;
+              margin-left: 20px;
+            "
           >
-        </div>
-      </ul>
-    </aside>
+            <h3 style="margin-bottom: 5px">Angel M. Aguas</h3>
+
+            <a
+              id="sign-out"
+              href="/dist//adminDashboard//signOut.html"
+              style="
+                text-decoration: none;
+                margin-left: 20px;
+                margin-bottom: 20%;
+              "
+              >Sign Out</a
+            >
+          </div>
+        </ul>
+      </aside>
+      <div style="  background-color: #2196F3;
+      ">service1</div>
+      <div>service2</div>
+      <div>service3</div>
+      <div>service4</div>
+      <div>service5</div>
+      <div>service6</div>
+    </div>
   </body>
 </html>

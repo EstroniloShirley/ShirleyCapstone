@@ -30,24 +30,12 @@ body {
   font-size: 0.925rem;
 }
 
-#wrapper {
-  margin-left: var(--sidebar-width);
-  transition: all 0.3s ease-in-out;
-}
-
-#wrapper.fullwidth {
-  margin-left: 0;
-}
-
 /** --------------------------------
  -- Sidebar
 -------------------------------- */
 .sidebar {
-  background-color: var(--sidebar-bg-color);
   width: var(--sidebar-width);
   transition: all 0.3s ease-in-out;
-  transform: translateX(0);
-  z-index: 9999999;
 }
 
 .sidebar .close-aside {
@@ -55,7 +43,7 @@ body {
   top: 7px;
   right: 7px;
   cursor: pointer;
-  color: var(--dk-gray-900);
+  color: var(--dk-light-bg);
 }
 
 .sidebar .sidebar-header {
