@@ -19,19 +19,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <x-app-layout>
+      <x-slot name="header">
+          <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+              {{ __('Book Appointment') }}
+          </h2>
+      </x-slot>
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-8 offset-md-3 border p-4 shadow bg-light">
-          <div class="col-12"> <x-application-logo class="block self-center	 h-9 w-auto fill-current  text-gray-800 dark:text-gray-200" />
-          </div>
+        <div class="col-md-10 offset-md-1 border p-4 shadow bg-light">
+      
           <div class="col-12">
             <h3
               class="mt-4 fw-bold text-center text-secondary fs-4 text-uppercase mb-1"
-            >    
-              Appointment form
+            >   <x-application-logo class="block center	 h-9 w-auto fill-current  text-gray-800 dark:text-gray-200" />  
+              Barangay Health Center
             </h3>
             <h5 class="fw-bold text-center text-secondary fs-s mb-10">
-              Monday: For Kid's Check-up
+              New Appointment form
             </h5>
            
           </div>
@@ -40,7 +45,71 @@
            
             <div class="row g-3">
            
-              <div class="col-7">
+             
+              
+              
+              <div class="col-md-12">
+                <h6 class="ml-1 mt-3"> Patient's Name</h6>
+                <input
+                  type="text"
+                  name="first_name"
+                  class="form-control"
+                  placeholder="Juan"
+                  pattern="[A-Z\sa-z]{3,20}"
+                  required
+                />@error('first_name')
+                <span class="text-red-500">{{$message}}</span>
+              @enderror
+              </div>
+
+           
+              <div class="col-md-4"><h6 class="ml-1 mt-3">Date of Birth </h6>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Date of Birth"
+                  name="birth_date"
+                  required
+                />
+              </div>
+
+              <div class="col-4"><h6 class="ml-1 mt-3">Gender <span class="text-red-500"> *</span></h6>
+                <select
+                  class="form-select"
+                  name="gender"
+                  required
+                >
+                  
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select>
+              </div>
+              <div class="col-md-4"><h6 class="ml-1 mt-3">Mobile Number <span class="text-red-500"> *</span></h6>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  placeholder="09121234247"
+                  pattern="[0]{1}[9]{1}[0-9]{9}"
+                  max="11"
+                  required
+                />
+              </div>
+              <div class="col-md-8"><h6 class="ml-1 mt-3">Home Address <span class="text-red-500"> *</span></h6>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  placeholder="212 Zone 3, Barangay Sta. Ignacia, Tarlac City"
+                  required
+                />
+              </div>
+              
+              
+            
+              <div class="col-4">
+                <h6 class="ml-1 mt-3">Services Available <span class="text-red-500"> *</span></h6>
+
                 <select
                 type="text"
                 name="service_type"
@@ -56,95 +125,6 @@
                   <option value="Saturday: Dental Check-up">Saturday: Dental Check-up</option>
                 </select>
               </div>
-              
-              
-              <div class="col-md-6">
-                <h6 class="ml-1 mt-3"> First Name<span class="text-red-500"> *</span></h6>
-                <input
-                  type="text"
-                  name="first_name"
-                  class="form-control"
-                  placeholder="Juan"
-                  pattern="[A-Z\sa-z]{3,20}"
-                  required
-                />@error('first_name')
-                <span class="text-red-500">{{$message}}</span>
-              @enderror
-              </div>
-
-              <div class="col-md-6"><h6 class="ml-1 mt-3"> Middle Name (optional)</h6>
-                <input
-                  type="text"
-                  name="middle_name"
-                  class="form-control"
-                  placeholder="Dela"
-                  pattern="[A-Z\sa-z]{3,20}"
-              
-                />
-              </div>
-              <div class="col-md-8"><h6 class="ml-1 mt-3"> Last Name<span class="text-red-500"> *</span></h6>
-                <input
-                  type="text"
-                  name="last_name"
-                  class="form-control"
-                  placeholder="Cruz"
-                  pattern="[A-Z\sa-z]{3,20}"
-                  required
-                />
-              </div>
-              <div class="col-md-4"><h6 class="ml-1 mt-3"> Suffix (optional)</h6>
-                <input
-                  type="text"
-                  name="suffix_name"
-                  class="form-control"
-                  placeholder="Jr./Sr. etc."
-                  pattern="[A-Z\sa-z]{2,10}"
-                />
-              </div>
-              <div class="col-md-8"><h6 class="ml-1 mt-3">Date of Birth<span class="text-red-500"> *</span></h6>
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="Date of Birth"
-                  name="birth_date"
-                  required
-                />
-              </div>
-
-              <div class="col-4"><h6 class="ml-1 mt-3">Gender<span class="text-red-500"> *</span></h6>
-                <select
-                  class="form-select"
-                  name="gender"
-                  required
-                >
-                  
-                  <option value="M">Male</option>
-                  <option value="F">Female</option>
-                </select>
-              </div>
-              <div class="col-md-8"><h6 class="ml-1 mt-3">Home Address<span class="text-red-500"> *</span></h6>
-                <input
-                  type="text"
-                  name="address"
-                  class="form-control"
-                  placeholder="212 Zone 3, Barangay Sta. Ignacia, Tarlac City"
-                  required
-                />
-              </div>
-              
-              <div class="col-md-4"><h6 class="ml-1 mt-3">Mobile Number<span class="text-red-500"> *</span></h6>
-                <input
-                  type="tel"
-                  name="phone"
-                  class="form-control"
-                  placeholder="09121234247"
-                  pattern="[0]{1}[9]{1}[0-9]{9}"
-                  max="11"
-                  required
-                />
-              </div>
-            
-            
 
               <div class="col-12"> <h6 class="mt-3">
                 Appointment Concern Details<span class="text-red-500"> *</span>
@@ -157,13 +137,9 @@
                 ></textarea>
               </div>
               <div class="col-12 mt-5 mb-4">
-                <input
-                  type="submit"
-                  value="Book this Appointment"
-                  class="btn bg-green-500 fw-bold text-white float-end hover:bg-green-400"
-                
-
-                />
+                <x-primary-button class="ms-4 float-end">
+                  {{ __('Book this Appointment') }}
+              </x-primary-button>  
                 <button
                   type="cancel"
                   class="btn bg-red-500 fw-bold text-white float-end hover:text-white me-2 hover:bg-red-400"
@@ -175,6 +151,6 @@
           </form>
         </div>
       </div>
-    </div>
+    </div></x-app-layout>
   </body>
 </html>
