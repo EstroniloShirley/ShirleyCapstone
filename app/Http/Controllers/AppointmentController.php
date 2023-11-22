@@ -21,6 +21,7 @@ class AppointmentController extends Controller
             
         
     }
+  
 
   //Show Create Monday Form
   public function create() {
@@ -38,7 +39,7 @@ class AppointmentController extends Controller
             'last_name'=> 'required',
             'gender' => 'required',
             'birth_date'=> 'required',
-            'phone'=> 'required',
+            'phone'=> 'required|numeric',
             'address'=> 'required',
             'service_type'=> 'required',
             'concern'=> 'required'

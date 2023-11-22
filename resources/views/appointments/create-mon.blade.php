@@ -48,8 +48,8 @@
              
               
               
-              <div class="col-md-12">
-                <h6 class="ml-1 mt-3"> Patient's Name</h6>
+              <div class="col-md-6">
+                <h6 class="ml-1 mt-3">First Name</h6>
                 <input
                   type="text"
                   name="first_name"
@@ -58,6 +58,19 @@
                   pattern="[A-Z\sa-z]{3,20}"
                   required
                 />@error('first_name')
+                <span class="text-red-500">{{$message}}</span>
+              @enderror
+              </div>
+            <div class="col-md-6">
+                <h6 class="ml-1 mt-3">Last Name</h6>
+                <input
+                  type="text"
+                  name="last_name"
+                  class="form-control"
+                  placeholder="Juan"
+                  pattern="[A-Z\sa-z]{3,20}"
+                  required
+                />@error('last_name')
                 <span class="text-red-500">{{$message}}</span>
               @enderror
               </div>
@@ -86,7 +99,7 @@
               </div>
               <div class="col-md-4"><h6 class="ml-1 mt-3">Mobile Number <span class="text-red-500"> *</span></h6>
                 <input
-                  type="tel"
+                  type="text"
                   name="phone"
                   class="form-control"
                   placeholder="09121234247"
