@@ -37,6 +37,9 @@ require __DIR__.'/auth.php';
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
 Route::get('/appointments/create-mon', [AppointmentController::class, 'create'])->name('appointments.create-mon');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+Route::get('/appointments/{appointments}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
+Route::put('/appointments/{appointments}/update', [AppointmentController::class, 'update'])->name('appointments.update');
+Route::delete('/appointments/{appointment}/destroy', [AppointmentController::class, 'destroy'])->name('appointment.destroy');
 
 
 

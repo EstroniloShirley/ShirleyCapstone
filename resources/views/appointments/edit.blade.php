@@ -40,9 +40,9 @@
             </h5>
            
           </div>
-          <form method="post" action="{{route('appointments.store')}}">
-            @csrf 
-           
+          <form method="post"  action="/appointment/{{$appointment->id}}"  enctype="multipart/form-data">                                                                                
+            @csrf
+               @method ('put')
             <div class="row g-3">
            
              
@@ -50,7 +50,7 @@
               
               <div class="col-md-6">
                 <h6 class="ml-1 mt-3">First Name</h6>
-                <input
+                <input value="{{$appointment->first_name}}"
                   type="text"
                   name="first_name"
                   class="form-control"
@@ -63,7 +63,7 @@
               </div>
             <div class="col-md-6">
                 <h6 class="ml-1 mt-3">Last Name</h6>
-                <input
+                <input value="{{$appointment->last_name}}"
                   type="text"
                   name="last_name"
                   class="form-control"
@@ -77,7 +77,7 @@
 
            
               <div class="col-md-4"><h6 class="ml-1 mt-3">Date of Birth </h6>
-                <input
+                <input value="{{$appointment->birth_date}}"
                   type="date"
                   class="form-control"
                   placeholder="Date of Birth"
@@ -87,7 +87,7 @@
               </div>
 
               <div class="col-4"><h6 class="ml-1 mt-3">Gender <span class="text-red-500"> *</span></h6>
-                <select
+                <select value="{{$appointment->gender}}"
                   class="form-select"
                   name="gender"
                   required
@@ -98,7 +98,7 @@
                 </select>
               </div>
               <div class="col-md-4"><h6 class="ml-1 mt-3">Mobile Number <span class="text-red-500"> *</span></h6>
-                <input
+                <input value="{{$appointment->phone}}"
                   type="text"
                   name="phone"
                   class="form-control"
@@ -108,37 +108,19 @@
                   required
                 />
               </div>
-      
-              <div class="col-md-12"><h6 class="ml-1 mt-3">Home Address <span class="text-red-500"> *</span></h6>
-                <input
-                  type="text"
-                  name="address"
-                  class="form-control"
-                  placeholder="212 Zone 3, Barangay Sta. Ignacia, Tarlac City"
-                  required
-                />
-              </div>
-
-              <div class="col-md-6"><h6 class="ml-1 mt-3">Date of Service </h6>
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="Date of Birth"
-                  name="birth_date"
-                  required
-                />
-              </div>
-
-              <div class="col-6">
+              
+              
+              
+              <div class="col-4">
                 <h6 class="ml-1 mt-3">Services Available <span class="text-red-500"> *</span></h6>
 
-                <select
+                <select 
                 type="text"
                 name="service_type"
                   class="form-select"
                   {{-- required --}}
                 >
-                  <option value="">Select Health Service</option>
+                  <option value="{{$appointment->service_type}}">Select Health Service</option>
                   <option value="Monday: Kid's Check-up">Monday: Kid's Check-up</option>
                   <option value="Tuesday: Pre-natal Check-up">Tuesday: Pre-natal Check-up</option>
                   <option value="Wednesday: Adult's Check-up">Wednesday: Adult's Check-up</option>
@@ -146,13 +128,21 @@
                   <option value="Friday: PWD's Check-up">Friday: PWD's Check-up</option>
                   <option value="Saturday: Dental Check-up">Saturday: Dental Check-up</option>
                 </select>
-              </div>
-
-             
-              <div class="col-12"> <h6 class="mt-3">
+            </div>
+            <div class="col-md-8"><h6 class="ml-1 mt-3">Home Address <span class="text-red-500"> *</span></h6>
+              <input value="{{$appointment->address}}"
+                type="text"
+                name="address"
+                class="form-control"
+                placeholder="212 Zone 3, Barangay Sta. Ignacia, Tarlac City"
+                required
+              />
+            </div>
+            
+            <div class="col-12"> <h6 class="mt-3">
                 Appointment Concern Details<span class="text-red-500"> *</span>
               </h6>
-                <textarea
+                <textarea  value="{{$appointment->concern}}"
                   class="form-control"
                   name="concern"
                   placeholder="Describe your appointment concern"
@@ -160,14 +150,20 @@
                 ></textarea>
               </div>
               <div class="col-12 mt-5 mb-4">
-                <x-primary-button class="ms-4 float-end">
-                  {{ __('Book this Appointment') }}
-              </x-primary-button>  
+                {{-- <x-primary-button class="ms-4 float-end"> <a href="/appointments">  {{ __('Update this Appointment') }}</a>
+              </x-primary-button>   --}}
+
+
+                <button
+                  type="submit"
+                  class="btn bg-green-200 fw-bold text-white float-end hover:text-white me-2 hover:bg-red-400"
+                ><a href="/appointments">Update</a>
+               </button>
                 <button
                   type="cancel"
                   class="btn bg-red-500 fw-bold text-white float-end hover:text-white me-2 hover:bg-red-400"
-                ><a href="/appointments">Cancel</a>
-       
+                ><a href="/appointments">Back</a>
+   
                </button>
               </div>
             </div>

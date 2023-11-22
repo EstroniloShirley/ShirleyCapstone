@@ -61,19 +61,34 @@ class AppointmentController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
+   
+    public function edit(Appointment $appointment){
+        return view ('appointments.edit', ['appointment' => $appointment]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+    public function update(Appointment $appointment, Request $request){
+        $appointments = $request -> validate ([
+       
+            'first_name' => 'required',
+            'last_name'=> 'required',
+            'gender' => 'required',
+            'birth_date'=> 'required',
+            'phone'=> 'required|numeric',
+            'address'=> 'required',
+            'service_type'=> 'required',
+            'concern'=> 'required'
+            
+          ]);
+
+          $appointment->update($appointments);
+
+          return redirect(route('appointment.index'))->with('success', 'Your Appointment Updated Successfully!');
+    }
+
+    
+    public function destroy(Appointment $appointment){
+        $appointment->delete ();
+        return redirect(route('appointments.index'))->with('success', 'Your Appointment Deleted Successfully!');
+
     }
 }
