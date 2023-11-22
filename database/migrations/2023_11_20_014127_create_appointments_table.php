@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('suffix_name')->nullable();
             $table->string('gender');
             $table->date('birth_date');
-            $table->string('phone');
             $table->string('address');
             $table->string('service_type');
             $table->text('concern');

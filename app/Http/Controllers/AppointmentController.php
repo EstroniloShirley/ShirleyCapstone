@@ -35,9 +35,7 @@ class AppointmentController extends Controller
         $data = $request->validate([
             'id' => ' ',
             'first_name' => 'required',
-            'middle_name'=> 'nullable',
             'last_name'=> 'required',
-            'suffix_name'=> 'nullable',
             'gender' => 'required',
             'birth_date'=> 'required',
             'phone'=> 'required',

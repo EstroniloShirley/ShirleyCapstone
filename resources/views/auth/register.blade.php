@@ -5,27 +5,53 @@
         <!-- Date of Birth -->
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('First Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('first_name')" required autofocus autocomplete="first_name" />
+            <x-input-label for="first_name" :value="__('First Name')" />
+            <x-text-input id="first_name" class="block mt-1 w-full" type="text" name="first_name" :value="old('first_name')" required autofocus autocomplete="first_name" />
             <x-input-error :messages="$errors->get('first_name')" class="mt-2" />
         </div>
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Last Name')" />
+        <!-- Last Name -->
+        <div  class="mt-4">
+            <x-input-label for="last_name" :value="__('Last Name')" />
             <x-text-input id="last_name" class="block mt-1 w-full" type="text" name="last_name" :value="old('last_name')" required autofocus autocomplete="last_name" />
             <x-input-error :messages="$errors->get('last_name')" class="mt-2" />
         </div>
-        <div>
+
+        {{-- Birth date --}}
+        <div  class="mt-4">
             <x-input-label for="birth_date" :value="__('Date of Birth')" />
            
-            <x-text-input id="birth_date" class="block mt-1 w-full" type="date" name="birth_date" :value="old('birth_date')" required autofocus autocomplete="birth_date" />
+            <x-text-input id="birth_date" class="block mt-1 w-full " type="date" name="birth_date" :value="old('birth_date')" required autofocus autocomplete="birth_date" />
             <x-input-error :messages="$errors->get('birth_date')" class="mt-2" />
         </div>
+        {{-- Gender --}}
+        <div  class="mt-4">
+            <x-input-label for="gender" :value="__('Gender')" />
+           
+            
+                <select id="gender" name="gender" class="w-full border-gray-300 rounded" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+          
+     
+                
+                <x-input-error :messages="$errors->get('gender')" class="mt-2" />
+        </div>
 
+
+        
+        <div class="mt-4">
+            <x-input-label for="address" :value="__('Address')" />
+            <x-text-input id="address"  type="text"
+            name="address"
+            placeholder="212 Zone 3, Barangay Sta. Ignacia, Tarlac City"
+            required class="block mt-1 w-full" :value="old('address')" required autocomplete="address" />
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
+        </div>
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full"      type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AppointmentController;
+// use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,13 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
+
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
 Route::get('/appointments/create-mon', [AppointmentController::class, 'create'])->name('appointments.create-mon');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+
+
+
+
+// Route::get('/bookings', [BookingController::class, 'index'])->name('bookings.index');
+// Route::get('/bookings', [BookingController::class, 'store'])->name('bookings.store');
